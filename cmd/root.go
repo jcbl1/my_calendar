@@ -51,7 +51,7 @@ func generate(cmd *cobra.Command, args []string) {
 	firstDay, err := time.Parse("2006-01-02", fmt.Sprintf("%d-%02d-%02d", date.y, date.m, 1))
 
 	//绘制日历表头
-	fmt.Println(date.m.String(), date.y, '\n')
+	fmt.Println(date.m.String(), date.y)
 	fmt.Println("Su Mo Tu We Th Fr Sa")
 
 	// 不同的第一天需要不同的缩进
